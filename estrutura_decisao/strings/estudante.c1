@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+
+ setlocale (LC_ALL,"pt_BR.UTF-8");
+
+ char nome [20];
+char escola[20];
+char curso [20];
+
+printf("\n--ola, vamos fazer seu cadastro---");
+
+
+printf("qual o seu nome?");
+scanf("%[^\n]", nome );
+
+print("qual o nome da sua escola");
+scanf("%[^\n]",escola);
+
+print("qual o seu curso");
+scanf("%[^\n]", curso);
+
+print("\n--suas informacoes academicas sao--");
+print("\nnome: %s", nome);
+print("\nensino medio: %s" escola);
+print("\nensino tecnico: %s" tecnico);
+
+
+
+
+
+
+return 0;
+}

@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <locale.h>
+
+void calcularArea(int figura, float valor) {
+
+    float area;
+
+    if (figura == 1) {
+        area = 3.14 * valor * valor;
+        printf("\nA area do circulo e: %.2f", area);
+    }
+    else if (figura == 2) {
+        area = valor * valor;
+        printf("\nA area do quadrado e: %.2f", area);
+    }
+    else {
+        printf("\nOpcao invalida!");
+    }
+}
+
+int main() {
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+
+    int figura;
+    float valor;
+
+    printf("Qual figura deseja calcular?\n");
+    printf("1 - Circulo\n");
+    printf("2 - Quadrado\n");
+    scanf("%d", &figura);
+
+    printf("\nDigite o valor: ");
+    scanf("%f", &valor);
+
+    calcularArea(figura, valor);
+
+    return 0;
+}

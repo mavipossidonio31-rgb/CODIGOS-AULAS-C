@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{ 
+// vetor com numeros declarados no inicio 
+//tudo na computacao começa do 0 (zero )
+//o vetor trabalha com as posiçoes 
+// 0->4, 1->9, 2->12, 3->3
+int numeros [] = {4,9,12,3};
+
+print("numero na posicao 2: %i",numeros [2] );
+
+return 0;
+
+}

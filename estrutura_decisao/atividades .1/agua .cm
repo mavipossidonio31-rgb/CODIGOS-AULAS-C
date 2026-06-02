@@ -1,0 +1,87 @@
+#include <stdio.h.> 
+#include <stdbool.h>
+
+int main() {
+    //entrada de informaçoes, variaveis e constantes 
+    const float valorporlitro= 0.05;
+    const int qtdelitrosmulta = 400;
+    const int qtdelitrosdesconto = 250
+    const float valormulta =150
+    const float valordesconto  = 50
+    const int periodo30=30
+
+    const bool faixaeconomica= false;
+    const bool faixanormal= false;
+    const bool faixaexcessiva= false;
+
+
+
+    int qtdepessoasresidencia= 0;
+    float valortotalconta = 0
+    int qtdelitroscomdumida = 0 
+    int idade = 0;
+
+    //processando das informacoes
+    printf("ola, vamos calcular sua conta de agua\n");
+    printf("para iniciar, quantas pessoas moram na residencia");
+    scanf("%i", &qtdepessoasresidencia);
+
+    for(int i=0, i,<qtdepessoaresidencia; i++){
+        printf("legal, agora qual idade da pessoa %i:",i);
+    scanf("%i", &idade);
+
+    if (idade <=10 ){
+     qtdelitroscomdumida +=18 ;
+    }else if (idade > 10 && idade <= 18){
+        qtdelitroscomdumida +=30
+    }else if ( idade >18 && idade <= 25){
+         qtdelitroscomdumida =+ 42;
+    }else if ( idade > 25 ){
+        qtdelitroscomdumida =+24;
+      }
+    }  
+
+    //valor total da conta
+    valortotalconta=valorporlitro*qtdelitroscomdumida*
+
+
+    //saida , relatorio
+    if (qtdelitroscomdumida >= faixaexcessiva)
+    {
+        //faixa excessiva  
+        printf ("faixa de consumo: excessiva\n");
+        printf("total de pessoas na residencia: %/n" , qtdepessoaresidencia);
+        printf("quantidade consumo em litros: %/n", qtdelitroscomdumida);
+        printf("valor da conta mensal : R$ %.2f\n", valortotalconta);
+        print ("multa aplicada: R$ %.2f\n" valormulta);
+    }
+    else if (qtdelitroscomdumida <= faixaeconomica)
+
+    // faixa economica 
+    printf("faixa de consumo: economica\n");
+        printf("total de pessoas na residencia: %i\n", qtdepessoasresidencia);
+        printf("quantidade consumo em litros: %i\n", qtdelitrosconsumida);
+        printf("valor da conta mensal: R$ %.2f\n", valortotalconta);
+        printf("desconto na proxima conta: R$ %.2f\n", valordesconto);
+    } else {
+     // faixa normal
+      printf("faixa de consumo: normal\n");
+      printf("total de pessoas na residencia: %i\n", qtdePessoasresidencia);
+      printf("quantidade consumo em litros: %i\n", qtdelitrosconsumida);
+      printf("valor da conta mensal: R$ %.2f\n", valortotalconta);
+
+    }
+   
+   
+    return 0;
+}
+
+        
+
+
+
+
+
+
+    
+    
